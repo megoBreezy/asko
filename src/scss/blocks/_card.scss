@@ -1,0 +1,543 @@
+.card-slider, .card-slider-hover {
+    position: relative;
+    margin-bottom: 25px;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .splide__slide {
+        padding-bottom: 0!important;
+        height: 210px;
+    }
+
+    .splide__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .splide__pagination__page {
+        border: 0;
+        border-radius: 0;
+        height: 22px;
+        width: 30px;
+        opacity: 1;
+        background: transparent;
+        position: relative;
+        margin: 0 2px;
+
+        &:after {
+            width: 16px;
+            height: 4px;
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transition: 0.3s all ease;
+            transform: translate(-50%,-50%);
+            background: #C4C4C4;
+
+        }
+    }
+    .splide__pagination__page.is-active {
+        transform: scale(1);
+    
+        &:after {
+            background: $blueColor;
+        }
+    }
+    .splide__pagination {
+        bottom: -27px;
+    }
+
+    .product-slider__badge-left {
+        left: 0;
+    }
+    .product-slider__badge-right {
+        right: 0;
+    }
+    .product-slider__badge-top {
+        top: 0;
+    }
+    .product-slider__badge-bottom {
+        bottom: 0;
+    }
+}
+.card {
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    padding: 6px 16px 16px;
+    position: relative;
+
+    &:hover {
+        .card__hover {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &__color {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 3px;
+
+        .color-checkbox-sm {
+            margin-right: 6px;
+        }
+    }
+
+    &__size {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .size-checkbox {
+            margin-right: 5px;
+        }
+    }
+
+    &__row-more {
+        text-decoration: none;
+        outline: 0;
+        font-size: 14px;
+        color: #1A1A18;
+        line-height: 28px;
+        transition: 0.3s all ease;
+        margin-right: auto;
+
+        &:hover {
+            color: $blueColor;
+        }
+    }
+
+    &__row {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 21px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link-more {
+        font-size: 14px;
+        line-height: 1.1;
+        display: flex;
+        color: #1A1A18;
+        transition: 0.3s all ease;
+        text-decoration: none;
+        outline: 0;
+        border-bottom: 1px solid #1A1A18;
+        margin-right: 15px;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+
+    &__availability {
+        font-size: 14px;
+        color: #1A1A18;
+        
+        .availability-ico {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        
+        .availability-ico--blue {
+            background: #31A7ED;
+        }
+        
+        .availability-ico--yellow {
+            background: #FEA93E;
+        }
+    }
+
+    .price-sm .price__old {
+        margin-left: 11px;
+    }
+
+    &__hover {
+        position: absolute;
+        background-color: #fff;
+        left: -1px;
+        top: -1px;
+        z-index: 5;
+        padding: 6px 16px 16px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s all ease;
+        width: calc(100% + 2px);
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        pointer-events: none;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    }
+}
+.material-btn {
+    text-decoration: none;
+    outline: 0;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 31px;
+    text-align: center;
+    color: #1A1A18;
+    border: 1px solid #E5E5E5;
+    border-radius: 2px;
+    width: 157px;
+    transition: 0.3s all ease;
+
+    &:hover {
+        color: $blueColor;
+    }
+}
+.card__hover {
+    .price-row {
+        margin-bottom: 8px;
+    }
+    .card__size {
+        margin-bottom: 9px;
+    }
+    .color-checkbox.color-checkbox-sm .color-checkbox__label {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card__row {
+        margin-bottom: 6px;
+    }
+
+    .product-slider__badge-top {
+        top: 0;
+    }
+}
+.card__inner {
+    padding-top: 30px;
+
+    .price-row {
+        margin-bottom: 15px;
+    }
+
+    .product-slider__badge-top {
+        top: -30px;
+    }
+}
+.card__product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    flex-wrap: wrap;
+}
+
+.card__row-label {
+    font-size: 14px;
+    line-height: 21px;
+    flex: 0 0 100%;
+    color: #1A1A18;
+    margin-bottom: 7px;
+}
+
+.card__head {
+    padding: 4px 9px 2px 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .product-whish-btn {
+        align-items: center;
+        display: flex;
+
+        .icon {
+            width: 19px;
+            height: 15px;
+            margin-right: 0;
+
+            &--heart-fill {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+
+    .rating {
+
+        .icon--star {
+            width: 13px;
+            height: 13px;
+        }
+
+        &__number {
+            font-size: 13px;
+        }
+    }
+    .rating-stars {
+        align-items: center;
+    }
+}
+
+.card__name {
+    font-size: 20px;
+    line-height: 29px;
+    color: #1A1A18;
+    text-decoration: none;
+    outline: 0;
+    transition: 0.3s all ease;
+    margin-bottom: 10px;
+    display: inline-block;
+
+    &:hover {
+        color: $blueColor;
+    }
+}
+
+.revised-slider {
+    position: relative;
+    margin-bottom: -100px;
+
+    .splide__arrow--next svg {
+        transform: rotate(-90deg);
+    }
+    .splide__arrow--prev svg {
+        transform: rotate(90deg);
+    }
+    .splide__arrow {
+        color: #C4C4C4;
+        background: none;
+        transition: 0.3s all ease;
+
+        svg {
+            fill: currentColor;
+            height: 10px;
+            width: 14px;
+        }
+
+        &:hover {
+            color: $blueColor;
+        }
+    }
+
+    .splide__arrow--prev {
+        left: -43px;
+    }
+    .splide__arrow--next {
+        right: -43px;
+    }
+    .splide__arrow {
+        margin-top: -100px;
+    }
+
+    .splide__arrow:disabled {
+        opacity: 0;
+    }
+
+    .splide__slide {
+        padding-bottom: 190px;
+    }
+
+    .card {
+        &__hover {
+            box-shadow: none;
+        }
+    }
+
+    .btn-card {
+        max-width: 150px;
+    }
+}
+
+.revised-filter {
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link {
+        border: 1px solid #E5E5E5;
+        border-radius: 37px;
+        text-decoration: none;
+        outline: 0;
+        transition: 0.3s all ease;
+        font-size: 16px;
+        line-height: 37px;
+        color: #6D6D6D;
+        display: inline-block;
+        padding: 0 14px;
+        margin-right: 8px;
+        margin-bottom: 5px;
+
+        &.is-active, &:hover {
+            color: #fff;
+            background: $blueColor;
+            border-color: $blueColor;
+        }
+    }
+}
+
+.card__category, .card__code {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #c4c4c4;
+}
+
+@media (max-width: 1550px) {
+
+    .revised-slider {
+        position: relative;
+    
+        .splide__arrow--prev {
+            left: -23px;
+        }
+        .splide__arrow--next {
+            right: -23px;
+        }
+    }
+
+}
+@media (max-width: 1480px) {
+    .card__color {
+        margin-bottom: 5px;
+    }
+
+    .card {
+        .price-sm {
+            margin-bottom: 5px;
+        }
+
+        .price-row__right {
+            margin-bottom: 5px;
+        }
+    }
+
+    .revised-slider {
+        .card__hover .color-checkbox.color-checkbox-sm .color-checkbox__label {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    
+    .card__color .color-checkbox-sm {
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .card__color .color-checkbox-sm {
+        margin-right: 3px;
+    }
+    .card__link-more {
+        font-size: 11px;
+        margin-right: 0;
+    }
+
+    .card {
+        .price-sm .price__number {
+            font-size: 17px;
+            line-height: 15px;
+        }
+        .price-sm .price__old {
+            font-size: 14px;
+            margin-left: 5px;
+            line-height: 15px;
+        }
+        .installments.installments-sm {
+            font-size: 11px;
+        }
+    }
+    .card__hover .color-checkbox.color-checkbox-sm .color-checkbox__label {
+        width: 35px;
+        height: 35px;
+    }
+    .card .price-sm .price__number {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .card .price-sm .price__old {
+        font-size: 12px;
+        margin-left: 5px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .revised-slider {
+        .btn-card {
+            max-width: 125px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .card {
+        &__inner {
+            display: none;
+        }
+        &__hover {
+            position: static; 
+            padding: 0;
+            border: 0;
+            box-shadow: none;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+    .revised-slider {
+        margin-bottom: 50px;
+
+        .splide__slide {
+            padding-bottom: 0;
+        }
+
+        .splide__arrow {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .revised-slider {
+        margin-bottom: 35px;
+    }
+    .card-slider {
+        margin-bottom: 36px; transform: scale(1);
+        
+        .splide__pagination {
+            bottom: -32px;
+        }
+    }
+    .revised-filter {
+        margin-bottom: 19px;
+    }
+    .revised-filter__link {
+        border-radius: 33px;
+        font-size: 13px;
+        line-height: 33px;
+    }
+}
+
+@media (max-width: 658px) {
+    .card__link-more {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .card {
+        padding: 6px 6px 16px;
+    }
+}

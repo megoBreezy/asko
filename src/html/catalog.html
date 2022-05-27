@@ -1,0 +1,2977 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title your site</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/tom-select.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/text-page.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <main id="main">
+      <div class="main-container" style="padding-top: 27px;">
+        <div class="catalog-section">
+          <div class="catalog-sidebar"> 
+            <div class="catalog-filters"> 
+              <div class="catalog-sidebar__title">
+                 Фильтр<a class="catalog-sidebar__close" href="#">
+                  <svg class="icon icon--cross">
+                    <use href="img/sprite.svg#cross"></use>
+                  </svg></a></div>
+              <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="in-stock">
+                <label class="checkbox__label" for="in-stock">
+                  <svg class="icon icon--check">
+                    <use href="img/sprite.svg#check"></use>
+                  </svg>В наличии
+                </label>
+              </div>
+              <div class="fliter-block"><a class="filter-head filter__dropdown-btn is-opened" href="#">Цена</a>
+                <div class="filter__dropdown" style="max-height: 63px">
+                  <div class="range-container">
+                    <div class="range-container__row">
+                      <div class="range-container__col">
+                        <label class="range-label">от   </label>
+                        <input class="input-from range-input" type="text">
+                      </div>
+                      <div class="range-container__col">
+                        <label class="range-label">до</label>
+                        <input class="input-to range-input" type="text">
+                      </div>
+                    </div>
+                    <div class="range-slider" data-min="0" data-max="600000" data-start-min="201000" data-start-max="490000" data-step="1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="fliter-block"><a class="filter-head filter__dropdown-btn is-opened" href="#">Высота ножки, см</a>
+                <div class="filter__dropdown" style="max-height: 63px">
+                  <div class="range-container">
+                    <div class="range-container__row">
+                      <div class="range-container__col">
+                        <label class="range-label">от   </label>
+                        <input class="input-from range-input" type="text">
+                      </div>
+                      <div class="range-container__col">
+                        <label class="range-label">до</label>
+                        <input class="input-to range-input" type="text">
+                      </div>
+                    </div>
+                    <div class="range-slider" data-min="0" data-max="50" data-start-min="3" data-start-max="32" data-step="1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="fliter-block"><a class="filter-head filter__dropdown-btn is-opened" href="#">Вес товара, кг</a>
+                <div class="filter__dropdown" style="max-height: 63px">
+                  <div class="range-container">
+                    <div class="range-container__row">
+                      <div class="range-container__col">
+                        <label class="range-label">от   </label>
+                        <input class="input-from range-input" type="text">
+                      </div>
+                      <div class="range-container__col">
+                        <label class="range-label">до</label>
+                        <input class="input-to range-input" type="text">
+                      </div>
+                    </div>
+                    <div class="range-slider" data-min="0" data-max="150" data-start-min="11" data-start-max="124" data-step="1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="fliter-block"><a class="filter-head filter__dropdown-btn" href="#">Рейтинг</a>
+                <div class="filter__dropdown">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="rating-number-1">
+                    <label class="checkbox__label" for="rating-number-1">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>1
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="rating-number-2">
+                    <label class="checkbox__label" for="rating-number-2">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>2
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="rating-number-3">
+                    <label class="checkbox__label" for="rating-number-3">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>3
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="rating-number-4">
+                    <label class="checkbox__label" for="rating-number-4">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>4
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="rating-number-5">
+                    <label class="checkbox__label" for="rating-number-5">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>5
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="fliter-block"><a class="filter-head filter__dropdown-btn" href="#">Формат дивана</a>
+                <div class="filter__dropdown">
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="format-1">
+                    <label class="checkbox__label" for="format-1">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>Интерьерные диваны
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="format-2">
+                    <label class="checkbox__label" for="format-2">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>Прямые
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="format-3">
+                    <label class="checkbox__label" for="format-3">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>Угловые
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input class="checkbox__input" type="checkbox" id="format-4">
+                    <label class="checkbox__label" for="format-4">
+                      <svg class="icon icon--check">
+                        <use href="img/sprite.svg#check"></use>
+                      </svg>Модульные диваны
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="fliter-block"><a class="filter-head filter__dropdown-btn is-opened" href="#">Ширина дивана, см</a>
+                <div class="filter__dropdown" style="max-height: 284px">
+                  <div class="form-control filter__form-contol">
+                    <input class="form-control__input" type="text" placeholder="Поиск значений ..."><a class="form-control__clear" href="#">
+                      <svg class="icon icon--cross">
+                        <use href="img/sprite.svg#cross"></use>
+                      </svg></a>
+                  </div>
+                  <div class="checkbox-list"> 
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-1">
+                      <label class="checkbox__label" for="width-1">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>mediflex 2106
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-2">
+                      <label class="checkbox__label" for="width-2">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>grateh a wells
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-3">
+                      <label class="checkbox__label" for="width-3">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>terapia new
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-4">
+                      <label class="checkbox__label" for="width-4">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>160х200
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-5">
+                      <label class="checkbox__label" for="width-5">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>7-зональный блок независимых пружын
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-6">
+                      <label class="checkbox__label" for="width-6">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>200х200
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-7">
+                      <label class="checkbox__label" for="width-7">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>80х200
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" type="checkbox" id="width-8">
+                      <label class="checkbox__label" for="width-8">
+                        <svg class="icon icon--check">
+                          <use href="img/sprite.svg#check"></use>
+                        </svg>90х220
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filter__dropdown">
+                    <div class="checkbox-list"> 
+                      <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="width-9">
+                        <label class="checkbox__label" for="width-9">
+                          <svg class="icon icon--check">
+                            <use href="img/sprite.svg#check"></use>
+                          </svg>100х200
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="width-10">
+                        <label class="checkbox__label" for="width-10">
+                          <svg class="icon icon--check">
+                            <use href="img/sprite.svg#check"></use>
+                          </svg>120х200
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="width-11">
+                        <label class="checkbox__label" for="width-11">
+                          <svg class="icon icon--check">
+                            <use href="img/sprite.svg#check"></use>
+                          </svg>140х200
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="width-12">
+                        <label class="checkbox__label" for="width-12">
+                          <svg class="icon icon--check">
+                            <use href="img/sprite.svg#check"></use>
+                          </svg>до 110кг
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="width-13">
+                        <label class="checkbox__label" for="width-13">
+                          <svg class="icon icon--check">
+                            <use href="img/sprite.svg#check"></use>
+                          </svg>до 90кг
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="width-13">
+                        <label class="checkbox__label" for="width-13">
+                          <svg class="icon icon--check">
+                            <use href="img/sprite.svg#check"></use>
+                          </svg>до 90кг
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input class="checkbox__input" type="checkbox" id="width-14">
+                        <label class="checkbox__label" for="width-14">
+                          <svg class="icon icon--check">
+                            <use href="img/sprite.svg#check"></use>
+                          </svg>свыше 140кг
+                        </label>
+                      </div>
+                    </div>
+                  </div><a class="filter__link-more" href="#"> <span class="filter__link-closed">Показать еще</span><span class="filter__link-opened">Скрыть</span></a>
+                </div>
+              </div>
+              <div class="fliter-block"><a class="filter-head filter__dropdown-btn" href="#">Цвет</a>
+                <div class="filter__dropdown" style="max-height: 155px">
+                  <div class="filter__color-container" data-simplebar data-simplebar-auto-hide="false">
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-1">
+                      <label class="f-color-checkbox__label" for="f-color-1"><span class="f-color-checkbox__figure" style="background: #9A846D;"></span>100х200</label>
+                    </div>
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-2">
+                      <label class="f-color-checkbox__label" for="f-color-2"><span class="f-color-checkbox__figure" style="background: #CCC5BF;"></span>140х200</label>
+                    </div>
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-3">
+                      <label class="f-color-checkbox__label" for="f-color-3"><span class="f-color-checkbox__figure" style="background: #6C695A;"></span>180х200</label>
+                    </div>
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-4">
+                      <label class="f-color-checkbox__label" for="f-color-4"><span class="f-color-checkbox__figure" style="background: #6E6872;"></span>80х200</label>
+                    </div>
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-5">
+                      <label class="f-color-checkbox__label" for="f-color-5"><span class="f-color-checkbox__figure" style="background: #FEA93E;"></span>80х200</label>
+                    </div>
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-6">
+                      <label class="f-color-checkbox__label" for="f-color-6"><span class="f-color-checkbox__figure" style="background: #9A846D;"></span>80х200</label>
+                    </div>
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-7">
+                      <label class="f-color-checkbox__label" for="f-color-7"><span class="f-color-checkbox__figure" style="background: yellow;"></span>80х200</label>
+                    </div>
+                    <div class="f-color-checkbox"> 
+                      <input class="f-color-checkbox__input" type="checkbox" id="f-color-8">
+                      <label class="f-color-checkbox__label" for="f-color-8"><span class="f-color-checkbox__figure" style="background: red;"></span>80х200</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="3d">
+                <label class="checkbox__label" for="3d">
+                  <svg class="icon icon--check">
+                    <use href="img/sprite.svg#check"></use>
+                  </svg><b>Наличие 3D модели</b>
+                </label>
+              </div>
+              <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="folding">
+                <label class="checkbox__label" for="folding">
+                  <svg class="icon icon--check">
+                    <use href="img/sprite.svg#check"></use>
+                  </svg><b>Раскладной</b>
+                </label>
+              </div>
+              <div class="filter__bottom"> <a class="btn btn-primary" href="#">Показать: 290 </a><a class="btn btn-clear" href="#">Сбросить</a></div>
+            </div>
+          </div>
+          <div class="catalog-body">
+            <div class="breadcrumbs"> 
+              <ul class="breadcrumbs-list"> 
+                <li class="breadcrumbs-list__item"> <a class="breadcrumbs-list__link" href="">Главная</a></li>
+                <li class="breadcrumbs-list__item">Диваны</li>
+              </ul><a class="breadcrumbs__btn-mobile" href="#"> 
+                <svg class="icon icon--angle-left">
+                  <use href="img/sprite.svg#angle-left"></use>
+                </svg>Диваны</a>
+            </div><a class="banner" href="#"><img src="img/banner.jpg" alt=""></a>
+            <div class="catalog-head">
+              <h1 class="page-title">Диваны</h1>
+              <div class="catalog-count">Товаров: <b>165</b></div>
+            </div>
+            <div class="catalog-nav"> <a class="catalog-nav__link" href="#">Прямые</a><a class="catalog-nav__link" href="#">Угловые</a><a class="catalog-nav__link is-active" href="#">Интерьерные диваны</a><a class="catalog-nav__more-mobile" href="#">Показать больше
+                <svg class="icon icon--angle-down">
+                  <use href="img/sprite.svg#angle-down"></use>
+                </svg></a>
+              <div class="catalog-nav__dropdown-mobile"><a class="catalog-nav__link" href="#">Модульные диваны</a></div>
+            </div>
+            <div class="catalog-filter-info">
+              <div class="active-filter">
+                <div class="active-filter__label">Фильтры:</div>
+                <div class="active-filter__item"> 
+                  <div class="active-filter__name">Цена: 200000-490000</div><a class="active-filter__remove" href="#">
+                    <svg class="icon icon--cross">
+                      <use href="img/sprite.svg#cross"></use>
+                    </svg></a>
+                </div>
+                <div class="active-filter__item"> 
+                  <div class="active-filter__name">Жесткий</div><a class="active-filter__remove" href="#">
+                    <svg class="icon icon--cross">
+                      <use href="img/sprite.svg#cross"></use>
+                    </svg></a>
+                </div>
+              </div>
+              <div class="catalog-sorting"><a class="btn-filter-mobile" href="#">
+                  <svg class="icon icon--filter">
+                    <use href="img/sprite.svg#filter"></use>
+                  </svg>Фильтр </a>
+                <div class="form-control-select"> 
+                  <select class="select">
+                    <option value="1">Популярные</option>
+                    <option value="2">Дешевые</option>
+                    <option value="3">Дорогие</option>
+                    <option value="4">Новые</option>
+                    <option value="5">С отзывами</option>
+                    <option value="6">Высокая оценка</option>
+                  </select>
+                </div>
+                <div class="show-products">Показать товаров: <a class="show-products__link" href="">24</a></div>
+              </div>
+            </div>
+            <div class="catalog-list"> 
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-1" checked id="size-1-1">
+                        <label class="size-checkbox__label" for="size-1-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-1" id="size-1-2">
+                        <label class="size-checkbox__label" for="size-1-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-1" id="size-1-3">
+                        <label class="size-checkbox__label" for="size-1-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-1" id="size-1-4">
+                        <label class="size-checkbox__label" for="size-1-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-1" id="color-1-1">
+                          <label class="color-checkbox__label" for="color-1-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-1" id="color-1-2">
+                          <label class="color-checkbox__label" for="color-1-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-1" id="color-1-3">
+                          <label class="color-checkbox__label" for="color-1-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-1-4">
+                          <label class="color-checkbox__label" for="color-1-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-1-5">
+                          <label class="color-checkbox__label" for="color-1-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-1-6">
+                          <label class="color-checkbox__label" for="color-1-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn is-active" href="#">
+                        <svg class="icon icon--heart-fill">
+                          <use href="img/sprite.svg#heart-fill"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-2" checked id="size-2-1">
+                        <label class="size-checkbox__label" for="size-2-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-2" id="size-2-2">
+                        <label class="size-checkbox__label" for="size-2-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-2" id="size-2-3">
+                        <label class="size-checkbox__label" for="size-2-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-2" id="size-2-4">
+                        <label class="size-checkbox__label" for="size-2-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-2-1">
+                          <label class="color-checkbox__label" for="color-2-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-2-2">
+                          <label class="color-checkbox__label" for="color-2-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-2-3">
+                          <label class="color-checkbox__label" for="color-2-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-2-4">
+                          <label class="color-checkbox__label" for="color-2-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-2-5">
+                          <label class="color-checkbox__label" for="color-2-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-2" id="color-2-6">
+                          <label class="color-checkbox__label" for="color-2-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-3" checked id="size-3-1">
+                        <label class="size-checkbox__label" for="size-3-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-3" id="size-3-2">
+                        <label class="size-checkbox__label" for="size-3-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-3" id="size-3-3">
+                        <label class="size-checkbox__label" for="size-3-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-3" id="size-3-4">
+                        <label class="size-checkbox__label" for="size-3-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-3" id="color-3-1">
+                          <label class="color-checkbox__label" for="color-3-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-3" id="color-3-2">
+                          <label class="color-checkbox__label" for="color-3-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-3" id="color-3-3">
+                          <label class="color-checkbox__label" for="color-3-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-3" id="color-3-4">
+                          <label class="color-checkbox__label" for="color-3-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-3" id="color-3-5">
+                          <label class="color-checkbox__label" for="color-3-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-3" id="color-3-6">
+                          <label class="color-checkbox__label" for="color-3-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="szize-4" checked id="szize-4-1">
+                        <label class="size-checkbox__label" for="szize-4-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="szize-4" id="szize-4-2">
+                        <label class="size-checkbox__label" for="szize-4-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="szize-4" id="szize-4-3">
+                        <label class="size-checkbox__label" for="szize-4-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="szize-4" id="szize-4-4">
+                        <label class="size-checkbox__label" for="szize-4-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-4" id="color-4-1">
+                          <label class="color-checkbox__label" for="color-4-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-4" id="color-4-2">
+                          <label class="color-checkbox__label" for="color-4-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-4" id="color-4-3">
+                          <label class="color-checkbox__label" for="color-4-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-4" id="color-4-4">
+                          <label class="color-checkbox__label" for="color-4-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-4" id="color-4-5">
+                          <label class="color-checkbox__label" for="color-4-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-4" id="color-4-6">
+                          <label class="color-checkbox__label" for="color-4-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-5" checked id="size-5-1">
+                        <label class="size-checkbox__label" for="size-5-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-5" id="size-5-2">
+                        <label class="size-checkbox__label" for="size-5-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-5" id="size-5-3">
+                        <label class="size-checkbox__label" for="size-5-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-5" id="size-5-4">
+                        <label class="size-checkbox__label" for="size-5-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-5" id="color-5-1">
+                          <label class="color-checkbox__label" for="color-5-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-5" id="color-5-2">
+                          <label class="color-checkbox__label" for="color-5-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-5" id="color-5-3">
+                          <label class="color-checkbox__label" for="color-5-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-5" id="color-5-4">
+                          <label class="color-checkbox__label" for="color-5-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-5" id="color-5-5">
+                          <label class="color-checkbox__label" for="color-5-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-5" id="color-5-6">
+                          <label class="color-checkbox__label" for="color-5-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-6" checked id="size-6-1">
+                        <label class="size-checkbox__label" for="size-6-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-6" id="size-6-2">
+                        <label class="size-checkbox__label" for="size-6-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-6" id="size-6-3">
+                        <label class="size-checkbox__label" for="size-6-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-6" id="size-6-4">
+                        <label class="size-checkbox__label" for="size-6-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-6" id="color-6-1">
+                          <label class="color-checkbox__label" for="color-6-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-6" id="color-6-2">
+                          <label class="color-checkbox__label" for="color-6-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-6" id="color-6-3">
+                          <label class="color-checkbox__label" for="color-6-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-6" id="color-6-4">
+                          <label class="color-checkbox__label" for="color-6-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-6" id="color-6-5">
+                          <label class="color-checkbox__label" for="color-6-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-6" id="color-6-6">
+                          <label class="color-checkbox__label" for="color-6-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-7" checked id="size-7-1">
+                        <label class="size-checkbox__label" for="size-7-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-7" id="size-7-2">
+                        <label class="size-checkbox__label" for="size-7-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-7" id="size-7-3">
+                        <label class="size-checkbox__label" for="size-7-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-7" id="size-7-4">
+                        <label class="size-checkbox__label" for="size-7-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-7" id="color-7-1">
+                          <label class="color-checkbox__label" for="color-7-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-7" id="color-7-2">
+                          <label class="color-checkbox__label" for="color-7-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-7" id="color-7-3">
+                          <label class="color-checkbox__label" for="color-7-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-7" id="color-7-4">
+                          <label class="color-checkbox__label" for="color-7-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-7" id="color-7-5">
+                          <label class="color-checkbox__label" for="color-7-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-7" id="color-7-6">
+                          <label class="color-checkbox__label" for="color-7-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-9" checked id="size-9-1">
+                        <label class="size-checkbox__label" for="size-9-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-9" id="size-9-2">
+                        <label class="size-checkbox__label" for="size-9-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-9" id="size-9-3">
+                        <label class="size-checkbox__label" for="size-9-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-9" id="size-9-4">
+                        <label class="size-checkbox__label" for="size-9-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-9" id="color-9-1">
+                          <label class="color-checkbox__label" for="color-9-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-9" id="color-9-2">
+                          <label class="color-checkbox__label" for="color-9-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-9" id="color-9-3">
+                          <label class="color-checkbox__label" for="color-9-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-9" id="color-9-4">
+                          <label class="color-checkbox__label" for="color-9-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-9" id="color-9-5">
+                          <label class="color-checkbox__label" for="color-9-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-9" id="color-9-6">
+                          <label class="color-checkbox__label" for="color-9-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-list__item">
+                <div class="card">
+                  <div class="card__hover"> 
+                    <div class="card__head"> 
+                      <div class="rating"> 
+                        <ul class="rating-stars">
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                          <li class="rating-stars__item">
+                            <svg class="icon icon--star">
+                              <use href="img/sprite.svg#star"></use>
+                            </svg>
+                            <div class="rating-stars__item-active" style="width: 50%">
+                              <svg class="icon icon--star">
+                                <use href="img/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </li>
+                        </ul>
+                        <div class="rating__number">4,9</div>
+                      </div><a class="product-whish-btn" href="#">
+                        <svg class="icon icon--heart">
+                          <use href="img/sprite.svg#heart"></use>
+                        </svg></a>
+                    </div>
+                    <div class="card-slider-hover">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list"><a class="splide__slide" href="#"><img src="img/product-slider-1.jpg" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-2.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-3.webp" alt=""></a><a class="splide__slide" href="#"><img src="img/product-slider-4.webp" alt=""></a></div>
+                      </div>
+                    </div>
+                    <div class="card__product-info"> 
+                      <div class="card__category">Диван</div>
+                      <div class="card__code">Код товара: 13244</div>
+                    </div><a class="card__name" href="#">Прямой диван Lily</a>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от <a class="installments__link" href="#">1200 Т</a></div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="card__row-label">Размер:</div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-8" checked id="size-8-1">
+                        <label class="size-checkbox__label" for="size-8-1">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-8" id="size-8-2">
+                        <label class="size-checkbox__label" for="size-8-2">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-8" id="size-8-3">
+                        <label class="size-checkbox__label" for="size-8-3">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="radio" name="size-8" id="size-8-4">
+                        <label class="size-checkbox__label" for="size-8-4">120х280</label>
+                      </div><a class="card__row-more" href="#">+5</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Цвет:</div>
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-8" id="color-8-1">
+                          <label class="color-checkbox__label" for="color-8-1" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-8" id="color-8-2">
+                          <label class="color-checkbox__label" for="color-8-2" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-8" id="color-8-3">
+                          <label class="color-checkbox__label" for="color-8-3" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-8" id="color-8-4">
+                          <label class="color-checkbox__label" for="color-8-4" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-8" id="color-8-5">
+                          <label class="color-checkbox__label" for="color-8-5" style="background: #FEA93E;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="radio" name="color-8" id="color-8-6">
+                          <label class="color-checkbox__label" for="color-8-6" style="background: #FEA93E;"></label>
+                        </div>
+                      </div><a class="card__row-more" href="#">+3</a>
+                    </div>
+                    <div class="card__row"> 
+                      <div class="card__row-label">Ткань:</div><a class="material-btn modal-btn" href="material">Выберите ткань</a>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней 
+                      </div>
+                    </div>
+                    <div class="card__row"> <a class="btn-card btn-border btn-border--blue" href="#">Купить в 1 клик</a><a class="btn-card btn btn-primary" href="#">В корзину</a></div>
+                  </div>
+                  <div class="card__inner"> 
+                    <div class="card-slider">
+                      <div class="product-slider__badge product-slider__badge-right product-slider__badge-bottom">
+                        <div class="badge badge--rose">-60%</div>
+                        <div class="badge badge--yellow">NEW</div>
+                      </div>
+                      <div class="product-slider__badge product-slider__badge-left product-slider__badge-top">
+                        <div class="badge badge--rose">Черная пятница</div>
+                        <div class="badge badge--yellow">Только на сайте</div>
+                      </div>
+                      <div class="splide__track">
+                        <div class="splide__list">
+                          <div class="splide__slide"><img src="img/product-slider-1.jpg" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-2.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-3.webp" alt=""></div>
+                          <div class="splide__slide"><img src="img/product-slider-4.webp" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__name">Прямой диван Lily</div>
+                    <div class="card__row"> 
+                      <div class="card__color">
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #9A846D;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #CCC5BF;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6C695A;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #6E6872;"></label>
+                        </div>
+                        <div class="color-checkbox color-checkbox-sm">
+                          <input class="color-checkbox__input" type="checkbox">
+                          <label class="color-checkbox__label" style="background: #FEA93E;"></label>
+                        </div>
+                      </div>
+                      <div class="card__link-more">Показать больше</div>
+                    </div>
+                    <div class="price-row"> 
+                      <div class="price price-sm"> 
+                        <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+                        <div class="price__old">465 504 &#8376;</div>
+                      </div>
+                      <div class="price-row__right">
+                        <div class="installments installments-sm">Рассрочка от 
+                          <div class="installments__link">1200 Т</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card__size">
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">140х220</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х200</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">100х240</label>
+                      </div>
+                      <div class="size-checkbox size-checkbox-sm">
+                        <input class="size-checkbox__input" type="checkbox">
+                        <label class="size-checkbox__label">120х280</label>
+                      </div>
+                      <div class="card__row-more">+5</div>
+                    </div>
+                    <div class="card__row">
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--yellow"></div>В наличии: 12
+                      </div>
+                      <div class="card__availability">
+                        <div class="availability-ico availability-ico--blue"></div>Под заказ: 10 дней
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><a class="btn-more" href="#">Показать еще</a>
+            <div class="pagination"> 
+              <ul class="pagination-list">
+                <li class="pagination-list__item is-active">1</li>
+                <li class="pagination-list__item"><a class="pagination-list__link" href="#">2</a></li>
+                <li class="pagination-list__item"><a class="pagination-list__link" href="#">3</a></li>
+                <li class="pagination-list__item"><a class="pagination-list__next" href="#">След.
+                    <svg class="icon icon--angle-right">
+                      <use href="img/sprite.svg#angle-right"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="pagination__count">Вы посмотрели 24 из 98 товаров</div>
+            </div>
+            <div class="catalog-text">  
+              <p>Что нужно человеку для доброго и прекрасного утра - это удобная постель и здоровый сон. Интернет-магазин Askona обладает широким ассортиментом на ортопедические матрасы для спокойной ночи.</p>
+              <p>В нашем каталоге предложены следующие группы товаров:</p>
+              <ul> 
+                <li>анатомические пружинные матрасы - подходят для здоровых людей и с проблемами позвоночника. Специальные наполнители обладают эффектом памяти, обеспечивают поддержку тела и снимают напряжение мышц. Каждая пружина упакована в отдельную нишу, что позволяет равномерно распределить нагрузку по всему телу;</li>
+                <li>комбинированные матрасы - отличаются повышенной гибкостью и эластичностью. Они способны максимально расслабить тело, обеспечить надежную его поддержку, способствуют регуляции влаги, температуры. Натуральные волокна не накапливают запахи и способствуют идеальному микроклимату в спальне;</li>
+                <li>беспружинные модели - с искусственными и натуральными наполнителями. Матрасы не проминаются под весом тела, быстро восстанавливают первоначальную форму даже после долгого срока службы. За счет сочетания разных материалов предотвращают передачу движения партнера и способствуют равномерному распределению нагрузки.</li>
+              </ul>
+              <p>Все матрасы удобные, гипоаллергенные, рассчитаны на различный вес и рост. Они не накапливают влагу, воздухопроницаемые, подлежат легкой очистке.</p>
+              <h4 class="title-sm">Где купить матрас?</h4>
+              <p>Интернет-магазин Askona - это доступные цены, широкий, регулярно обновляемый ассортимент на комфортную мебель в Казахстане. Наша компания предлагает Вам не только ортопедические матрасы, но и другие виды матрасов собственного производства. Мы осуществляем быструю доставку матрасов по всей стране. Покупатель может также забрать заказ из пункта самовывоза в Алматы или сделать заказ через сторонние курьерские службы.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-navbar"> 
+        <div class="mobile-navbar__body">
+          <ul class="mobile-list"> 
+            <li class="mobile-list__item"><a class="mobile-list__link" href="#"><span class="mobile-list__icon">
+                  <svg class="icon icon--filter-sm">
+                    <use href="img/sprite.svg#filter-sm"></use>
+                  </svg></span>Фильтр</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link" href="#"><span class="mobile-list__icon">
+                  <svg class="icon icon--lope">
+                    <use href="img/sprite.svg#lope"></use>
+                  </svg></span>Поиск</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link" href="#"><span class="mobile-list__icon">
+                  <svg class="icon icon--cabinet">
+                    <use href="img/sprite.svg#cabinet"></use>
+                  </svg></span>Кабинет</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link mobile-navbar__btn" href="#" data-tab="navbar-tab-1"><span class="mobile-list__icon">
+                  <svg class="icon icon--chat">
+                    <use href="img/sprite.svg#chat"></use>
+                  </svg>
+                  <svg class="icon icon--chat-fill">
+                    <use href="img/sprite.svg#chat-fill"></use>
+                  </svg><span class="online-badge">Online</span></span>Чат</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link mobile-navbar__btn" href="#" data-tab="navbar-tab-2"><span class="mobile-list__icon">
+                  <svg class="icon icon--phone">
+                    <use href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <svg class="icon icon--phone-fill">
+                    <use href="img/sprite.svg#phone-fill"></use>
+                  </svg><span class="online-badge">Online</span></span>Звонок</a></li>
+          </ul>
+        </div>
+        <div class="mobile-navbar__item" data-tab-content="navbar-tab-1"> 
+          <ul class="social-navbar">
+            <li class="social-navbar__item"> <a class="social-navbar__link social-navbar__link-vk" href="#">
+                <svg class="icon icon--vk">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="social-navbar__item"> <a class="social-navbar__link social-navbar__link-telegram" href="#">
+                <svg class="icon icon--telegram">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg></a></li>
+            <li class="social-navbar__item"> <a class="social-navbar__link social-navbar__link-facebook" href="#">
+                <svg class="icon icon--facebook">
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg></a></li>
+            <li class="social-navbar__item"> <a class="social-navbar__link social-navbar__link-odnoklasniki" href="#">
+                <svg class="icon icon--odnoklasniki">
+                  <use href="img/sprite.svg#odnoklasniki"></use>
+                </svg></a></li>
+            <li class="social-navbar__item"> <a class="social-navbar__link social-navbar__link-whatsapp" href="#">
+                <svg class="icon icon--whatsapp">
+                  <use href="img/sprite.svg#whatsapp"></use>
+                </svg></a></li>
+            <li class="social-navbar__item"> <a class="social-navbar__link social-navbar__link-viber" href="#">
+                <svg class="icon icon--viber">
+                  <use href="img/sprite.svg#viber"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="mobile-navbar__item" data-tab-content="navbar-tab-2"> 
+          <ul class="phone-nav"> 
+            <li class="phone-nav__item is-active"> <a class="phone-nav__link is-active" href="#" data-tab="phone-tab-1">
+                <svg class="icon icon--phone">
+                  <use href="img/sprite.svg#phone"></use>
+                </svg>
+                <svg class="icon icon--phone-fill icon-active">
+                  <use href="img/sprite.svg#phone-fill"></use>
+                </svg></a></li>
+            <li class="phone-nav__item"> <a class="phone-nav__link" href="#" data-tab="phone-tab-2">
+                <svg class="icon icon--chat">
+                  <use href="img/sprite.svg#chat"></use>
+                </svg>
+                <svg class="icon icon--chat-fill icon-active">
+                  <use href="img/sprite.svg#chat-fill"></use>
+                </svg></a></li>
+            <li class="phone-nav__item"> <a class="phone-nav__link" href="#" data-tab="phone-tab-3">
+                <svg class="icon icon--video">
+                  <use href="img/sprite.svg#video"></use>
+                </svg>
+                <svg class="icon icon--video-fill icon-active">
+                  <use href="img/sprite.svg#video-fill"></use>
+                </svg></a></li>
+          </ul>
+          <div class="phone-tab is-active" data-tab-content="phone-tab-1"> 
+            <h4 class="phone-title">Заказать обратный звонок</h4>
+            <div class="form-control"> 
+              <input class="form-control__input" type="text" placeholder="Имя">
+            </div>
+            <div class="form-control"> 
+              <input class="form-control__input" type="text" placeholder="+ 375 (___) ___ -__-__">
+            </div><a class="btn btn-primary btn-full" href="#">Свяжитесь со мной </a>
+            <div class="terms"> 
+              <p>Отправляя заявку, я соглашаюсь с условиями <br><a class="link-blue" href="#">Политика конфиденциальности</a></p>
+            </div>
+            <div class="call-naw">Вы можете сэкономить время, позвонив нам прямо сейчас:<a class="call-naw__link" href="tel:+375000000000">+375 (00) 000-00-00</a></div>
+          </div>
+          <div class="phone-tab" data-tab-content="phone-tab-2">
+            <h4 class="phone-title">Задать вопрос</h4>
+            <div class="form-control"> 
+              <input class="form-control__input" type="text" placeholder="Имя">
+            </div>
+            <div class="form-control"> 
+              <input class="form-control__input" type="text" placeholder="E-mail">
+            </div>
+            <div class="form-control">
+              <textarea class="form-control__textarea"  cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+            </div><a class="btn btn-primary btn-full" href="#">Отправить собщение</a>
+            <div class="terms"> 
+              <p>Отправляя заявку, я соглашаюсь с условиями <br><a class="link-blue" href="#">Политика конфиденциальности</a></p>
+            </div>
+          </div>
+          <div class="phone-tab" data-tab-content="phone-tab-3">
+            <h4 class="phone-title">Видео конференция со специалистом</h4>
+            <div class="phone-sub-title">Персональные видеоконсультации со специалистом магазина, позволят выбрать мебель не выходя из дома.</div>
+            <div class="form-control"> 
+              <input class="form-control__input" type="text" placeholder="Имя">
+            </div>
+            <div class="form-control"> 
+              <input class="form-control__input" type="text" placeholder="+ 375 (___) ___ -__-__">
+            </div>
+            <div class="form-control-select">
+              <select class="select" palceholder="Способ связи">
+                <option value="">Способ связи</option>
+                <option value="1">Способ связи 1</option>
+                <option value="2">Способ связи 2</option>
+                <option value="3">Способ связи 3</option>
+              </select>
+            </div><a class="btn btn-primary btn-full" href="#">Отправить заявку</a>
+            <div class="terms"> 
+              <p>Отправляя заявку, я соглашаюсь с условиями <br><a class="link-blue" href="#">Политика конфиденциальности</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-sidebar" id="material"><a class="modal-sidebar__close" href="#"> 
+          <svg class="icon icon--cross">
+            <use href="img/sprite.svg#cross"></use>
+          </svg></a>
+        <div class="product-previwe"> <a class="modal-sidebar__close" href="#"> 
+            <svg class="icon icon--cross">
+              <use href="img/sprite.svg#cross"></use>
+            </svg></a>
+          <div class="product-previwe__img"><img src="img/product-slider-1.jpg" alt=""></div>
+          <h2 class="product-name">Прямой диван Lily</h2>
+          <div class="price"> 
+            <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+          </div><a class="btn btn-product btn-primary" href="#">В корзину</a>
+        </div>
+        <div class="modal-sidebar__inner"><a class="modal-sidebar__close" href="#"> 
+            <svg class="icon icon--cross">
+              <use href="img/sprite.svg#cross"></use>
+            </svg></a>
+          <div class="modal-sidebar__head"> 
+            <h2 class="product-name">Прямой диван Lily</h2>
+            <div class="modal-sidebar__head-right">
+              <div class="price"> 
+                <div class="price__number"> <span class="price__label">от</span>186 202 <span class="price__number-currency">&#8376;</span></div>
+              </div><a class="btn btn-product btn-primary" href="#">В корзину</a>
+            </div>
+          </div>
+          <div class="modal-sidebar__img-container"> 
+            <div class="modal-sidebar__img"><img src="img/product-slider-1.jpg" alt=""></div>
+            <div class="product-slider__buttons"> <a class="product-slider__btn modal-btn-zoom" href="zoom">
+                <svg class="icon icon--zoom-plus">
+                  <use href="img/sprite.svg#zoom-plus"></use>
+                </svg></a><a class="product-slider__btn product-slider__btn--blue" href="#">360&ordm;</a></div>
+          </div>
+          <div class="modal-sidebar__filter">
+            <h4 class="title-sm">Материал</h4>
+            <div class="modal-sidebar__filter-row">
+              <div class="modal-sidebar__filter-item">
+                <div class="modal-select">
+                  <div class="modal-select__label">Размер: </div>
+                  <select class="select">
+                    <option value="1">120x200</option>
+                    <option value="2">130x200</option>
+                    <option value="3">140x200</option>
+                    <option value="4">150x200</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-sidebar__filter-item">
+                <div class="modal-select">
+                  <div class="modal-select__label">Цвет:  </div>
+                  <select class="select-w-icon">
+                    <option value="1" data-color="background: #745C5C;">Коричневый</option>
+                    <option value="2" data-color="background: #000;">Dorio Grafit</option>
+                    <option value="3" data-color="background: #C8BBA1;">Dorio Grafit</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-sidebar__filter-item">
+                <div class="modal-select">
+                  <div class="modal-select__label">Свойства:  </div>
+                  <select class="select">
+                    <option value="1">Pet Friendly</option>
+                    <option value="2">Friendly Pet </option>
+                    <option value="3">Pet Not Friendly</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-sidebar__row"> 
+            <div class="modal-sidebar__row-head"><a class="link-modal-more" href="#">Название ткани (Велюр)</a>Цена от 189 500 Т</div>
+            <div class="modal-sidebar__dropdown"> 
+              <ul class="product-offer"> 
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--car">
+                    <use href="img/sprite.svg#car"></use>
+                  </svg>Доставим сегодня при заказе до 15:00
+                </li>
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--timer">
+                    <use href="img/sprite.svg#timer"></use>
+                  </svg>Быстрый вопрос
+                </li>
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--garage">
+                    <use href="img/sprite.svg#garage"></use>
+                  </svg>Самовывоз: <a class="product-offer__link" href="#">1 пункт</a>
+                </li>
+              </ul>
+              <p>Мягкий и удобный прямой диван – уютный уголок для комфортного отдыха всей семьи. Оснащенная простым и надежным механизмом трансформации, эта модель легко раскладывается в просторное и ровное место для сна. Материал обивки – практичный и приятный на ощупь, он надолго сохраняет свой прежний вид, не истирается и </p>
+            </div>
+            <div class="radio-list">
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-2" id="material-2-1">
+                  <label class="material-checkbox__label" for="material-2-1"><span class="material-color material--outer-space"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-2" id="material-2-2">
+                  <label class="material-checkbox__label" for="material-2-2"><span class="material-color material--coral-reef"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-2" id="material-2-3">
+                  <label class="material-checkbox__label" for="material-2-3"><span class="material-color material--bazaar"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-2" id="material-2-4">
+                  <label class="material-checkbox__label" for="material-2-4"><span class="material-color material--granite-green"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-sidebar__row"> 
+            <div class="modal-sidebar__row-head"><a class="link-modal-more" href="#">Название ткани (Велюр)</a>Цена от 189 500 Т</div>
+            <div class="modal-sidebar__dropdown"> 
+              <ul class="product-offer"> 
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--car">
+                    <use href="img/sprite.svg#car"></use>
+                  </svg>Доставим сегодня при заказе до 15:00
+                </li>
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--timer">
+                    <use href="img/sprite.svg#timer"></use>
+                  </svg>Быстрый вопрос
+                </li>
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--garage">
+                    <use href="img/sprite.svg#garage"></use>
+                  </svg>Самовывоз: <a class="product-offer__link" href="#">1 пункт</a>
+                </li>
+              </ul>
+              <p>Мягкий и удобный прямой диван – уютный уголок для комфортного отдыха всей семьи. Оснащенная простым и надежным механизмом трансформации, эта модель легко раскладывается в просторное и ровное место для сна. Материал обивки – практичный и приятный на ощупь, он надолго сохраняет свой прежний вид, не истирается и </p>
+            </div>
+            <div class="radio-list">
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-3" id="material-3-1">
+                  <label class="material-checkbox__label" for="material-3-1"><span class="material-color material--outer-space"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-3" id="material-3-2">
+                  <label class="material-checkbox__label" for="material-3-2"><span class="material-color material--coral-reef"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-3" id="material-3-3">
+                  <label class="material-checkbox__label" for="material-3-3"><span class="material-color material--bazaar"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-3" id="material-3-4">
+                  <label class="material-checkbox__label" for="material-3-4"><span class="material-color material--granite-green"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-sidebar__row"> 
+            <div class="modal-sidebar__row-head"><a class="link-modal-more" href="#">Название ткани (Велюр)</a>Цена от 189 500 Т</div>
+            <div class="modal-sidebar__dropdown"> 
+              <ul class="product-offer"> 
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--car">
+                    <use href="img/sprite.svg#car"></use>
+                  </svg>Доставим сегодня при заказе до 15:00
+                </li>
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--timer">
+                    <use href="img/sprite.svg#timer"></use>
+                  </svg>Быстрый вопрос
+                </li>
+                <li class="product-offer__item"> 
+                  <svg class="icon icon--garage">
+                    <use href="img/sprite.svg#garage"></use>
+                  </svg>Самовывоз: <a class="product-offer__link" href="#">1 пункт</a>
+                </li>
+              </ul>
+              <p>Мягкий и удобный прямой диван – уютный уголок для комфортного отдыха всей семьи. Оснащенная простым и надежным механизмом трансформации, эта модель легко раскладывается в просторное и ровное место для сна. Материал обивки – практичный и приятный на ощупь, он надолго сохраняет свой прежний вид, не истирается и </p>
+            </div>
+            <div class="radio-list">
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-4" id="material-4-1">
+                  <label class="material-checkbox__label" for="material-4-1"><span class="material-color material--coral-reef"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+              <div class="radio-list__item">
+                <div class="material-checkbox">
+                  <input class="material-checkbox__input" type="radio" name="material-4" id="material-4-2">
+                  <label class="material-checkbox__label" for="material-4-2"><span class="material-color material--granite-green"></span><span class="material-name">Dorio Grafit</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-zoom" id="zoom"><a class="zoom-close" href="#"> 
+          <svg class="icon icon--cross">
+            <use href="img/sprite.svg#cross"></use>
+          </svg></a>
+        <div class="main-container">
+          <div class="zoom-slider-container">
+            <div class="zoom-slider">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <svg class="icon icon--angle-left">
+                    <use href="img/sprite.svg#angle-left"></use>
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <svg class="icon icon--angle-right">
+                    <use href="img/sprite.svg#angle-left"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <div class="zoom-slider__inner"> <img class="zoom-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="zoom-slider__inner"> <img class="zoom-slider__img" src="img/product-slider-2.webp" alt=""></div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="zoom-slider__inner"> <img class="zoom-slider__img" src="img/product-slider-3.webp" alt=""></div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="zoom-slider__inner"> <img class="zoom-slider__img" src="img/product-slider-4.webp" alt=""></div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="zoom-slider__inner"> <img class="zoom-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="zoom-slider__inner"> <img class="zoom-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="zoom-slider__inner"> <img class="zoom-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="zoom-thumbs-slider">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide"><img class="zoom-thumbs-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                  <div class="splide__slide"><img class="zoom-thumbs-slider__img" src="img/product-slider-2.webp" alt=""></div>
+                  <div class="splide__slide"><img class="zoom-thumbs-slider__img" src="img/product-slider-3.webp" alt=""></div>
+                  <div class="splide__slide"><img class="zoom-thumbs-slider__img" src="img/product-slider-4.webp" alt=""></div>
+                  <div class="splide__slide"><img class="zoom-thumbs-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                  <div class="splide__slide"><img class="zoom-thumbs-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                  <div class="splide__slide"><img class="zoom-thumbs-slider__img" src="img/product-slider-1.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding-top: 300px;"></div>
+    </main>
+    <script src="js/splide.min.js"></script>
+    <script src="js/tom-select.complete.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/wNumb.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/text-page.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

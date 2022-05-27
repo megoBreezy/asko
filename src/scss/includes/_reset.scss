@@ -1,0 +1,41 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  margin:0;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: $fontFamili;
+  background: #fff;
+  color: $mainColor;
+
+  &.body-overflow {
+    overflow: hidden;
+  }
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 568px) {
+  body {
+    font-size: 16px;
+  }
+} 

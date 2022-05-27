@@ -1,0 +1,2464 @@
+div(style="padding-top: 27px;").main-container
+    .catalog-section
+        div.catalog-sidebar 
+            .catalog-filters 
+                .catalog-sidebar__title 
+                    |Фильтр
+                    a(href="#").catalog-sidebar__close
+                        svg.icon.icon--cross
+                            use(href="img/sprite.svg#cross")
+                .checkbox
+                    input(type="checkbox")#in-stock.checkbox__input
+                    label(for="in-stock").checkbox__label
+                        svg.icon.icon--check
+                            use(href="img/sprite.svg#check")
+                        |В наличии
+                .fliter-block
+                    a(href="#").filter-head.filter__dropdown-btn.is-opened Цена
+                    div(style="max-height: 63px").filter__dropdown
+                        .range-container
+                            .range-container__row
+                                .range-container__col
+                                    label.range-label от   
+                                    input(type="text").input-from.range-input
+                                .range-container__col
+                                    label.range-label до
+                                    input(type="text").input-to.range-input
+                            div(data-min="0", data-max="600000", data-start-min="201000", data-start-max="490000", data-step="1").range-slider
+                .fliter-block
+                    a(href="#").filter-head.filter__dropdown-btn.is-opened Высота ножки, см
+                    div(style="max-height: 63px").filter__dropdown
+                        .range-container
+                            .range-container__row
+                                .range-container__col
+                                    label.range-label от   
+                                    input(type="text").input-from.range-input
+                                .range-container__col
+                                    label.range-label до
+                                    input(type="text").input-to.range-input
+                            div(data-min="0", data-max="50", data-start-min="3", data-start-max="32", data-step="1").range-slider
+                .fliter-block
+                    a(href="#").filter-head.filter__dropdown-btn.is-opened Вес товара, кг
+                    div(style="max-height: 63px").filter__dropdown
+                        .range-container
+                            .range-container__row
+                                .range-container__col
+                                    label.range-label от   
+                                    input(type="text").input-from.range-input
+                                .range-container__col
+                                    label.range-label до
+                                    input(type="text").input-to.range-input
+                            div(data-min="0", data-max="150", data-start-min="11", data-start-max="124", data-step="1").range-slider
+                .fliter-block
+                    a(href="#").filter-head.filter__dropdown-btn Рейтинг
+                    .filter__dropdown
+                        .checkbox
+                            input(type="checkbox")#rating-number-1.checkbox__input
+                            label(for="rating-number-1").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |1
+                        .checkbox
+                            input(type="checkbox")#rating-number-2.checkbox__input
+                            label(for="rating-number-2").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |2
+                        .checkbox
+                            input(type="checkbox")#rating-number-3.checkbox__input
+                            label(for="rating-number-3").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |3
+                        .checkbox
+                            input(type="checkbox")#rating-number-4.checkbox__input
+                            label(for="rating-number-4").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |4
+                        .checkbox
+                            input(type="checkbox")#rating-number-5.checkbox__input
+                            label(for="rating-number-5").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |5
+                .fliter-block
+                    a(href="#").filter-head.filter__dropdown-btn Формат дивана
+                    .filter__dropdown
+                        .checkbox
+                            input(type="checkbox")#format-1.checkbox__input
+                            label(for="format-1").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |Интерьерные диваны
+                        .checkbox
+                            input(type="checkbox")#format-2.checkbox__input
+                            label(for="format-2").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |Прямые
+                        .checkbox
+                            input(type="checkbox")#format-3.checkbox__input
+                            label(for="format-3").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |Угловые
+                        .checkbox
+                            input(type="checkbox")#format-4.checkbox__input
+                            label(for="format-4").checkbox__label
+                                svg.icon.icon--check
+                                    use(href="img/sprite.svg#check")
+                                |Модульные диваны
+                .fliter-block
+                    a(href="#").filter-head.filter__dropdown-btn.is-opened Ширина дивана, см
+                    div(style="max-height: 284px").filter__dropdown
+                        .form-control.filter__form-contol
+                            input(type="text", placeholder="Поиск значений ...").form-control__input
+                            a(href="#").form-control__clear
+                                svg.icon.icon--cross
+                                    use(href="img/sprite.svg#cross")
+                        .checkbox-list 
+                            .checkbox
+                                input(type="checkbox")#width-1.checkbox__input
+                                label(for="width-1").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |mediflex 2106
+                            .checkbox
+                                input(type="checkbox")#width-2.checkbox__input
+                                label(for="width-2").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |grateh a wells
+                            .checkbox
+                                input(type="checkbox")#width-3.checkbox__input
+                                label(for="width-3").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |terapia new
+                            .checkbox
+                                input(type="checkbox")#width-4.checkbox__input
+                                label(for="width-4").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |160х200
+                            .checkbox
+                                input(type="checkbox")#width-5.checkbox__input
+                                label(for="width-5").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |7-зональный блок независимых пружын
+                            .checkbox
+                                input(type="checkbox")#width-6.checkbox__input
+                                label(for="width-6").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |200х200
+                            .checkbox
+                                input(type="checkbox")#width-7.checkbox__input
+                                label(for="width-7").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |80х200
+                            .checkbox
+                                input(type="checkbox")#width-8.checkbox__input
+                                label(for="width-8").checkbox__label
+                                    svg.icon.icon--check
+                                        use(href="img/sprite.svg#check")
+                                    |90х220
+                        .filter__dropdown
+                            .checkbox-list 
+                                .checkbox
+                                    input(type="checkbox")#width-9.checkbox__input
+                                    label(for="width-9").checkbox__label
+                                        svg.icon.icon--check
+                                            use(href="img/sprite.svg#check")
+                                        |100х200
+                                .checkbox
+                                    input(type="checkbox")#width-10.checkbox__input
+                                    label(for="width-10").checkbox__label
+                                        svg.icon.icon--check
+                                            use(href="img/sprite.svg#check")
+                                        |120х200
+                                .checkbox
+                                    input(type="checkbox")#width-11.checkbox__input
+                                    label(for="width-11").checkbox__label
+                                        svg.icon.icon--check
+                                            use(href="img/sprite.svg#check")
+                                        |140х200
+                                .checkbox
+                                    input(type="checkbox")#width-12.checkbox__input
+                                    label(for="width-12").checkbox__label
+                                        svg.icon.icon--check
+                                            use(href="img/sprite.svg#check")
+                                        |до 110кг
+                                .checkbox
+                                    input(type="checkbox")#width-13.checkbox__input
+                                    label(for="width-13").checkbox__label
+                                        svg.icon.icon--check
+                                            use(href="img/sprite.svg#check")
+                                        |до 90кг
+                                .checkbox
+                                    input(type="checkbox")#width-13.checkbox__input
+                                    label(for="width-13").checkbox__label
+                                        svg.icon.icon--check
+                                            use(href="img/sprite.svg#check")
+                                        |до 90кг
+                                .checkbox
+                                    input(type="checkbox")#width-14.checkbox__input
+                                    label(for="width-14").checkbox__label
+                                        svg.icon.icon--check
+                                            use(href="img/sprite.svg#check")
+                                        |свыше 140кг
+                        a(href="#").filter__link-more 
+                            span.filter__link-closed Показать еще
+                            span.filter__link-opened Скрыть
+                .fliter-block
+                    a(href="#").filter-head.filter__dropdown-btn Цвет
+                    div(style="max-height: 155px").filter__dropdown
+                        div(data-simplebar, data-simplebar-auto-hide="false").filter__color-container
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-1.f-color-checkbox__input
+                                label(for="f-color-1").f-color-checkbox__label
+                                    span(style="background: #9A846D;").f-color-checkbox__figure
+                                    |100х200
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-2.f-color-checkbox__input
+                                label(for="f-color-2").f-color-checkbox__label
+                                    span(style="background: #CCC5BF;").f-color-checkbox__figure
+                                    |140х200
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-3.f-color-checkbox__input
+                                label(for="f-color-3").f-color-checkbox__label
+                                    span(style="background: #6C695A;").f-color-checkbox__figure
+                                    |180х200
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-4.f-color-checkbox__input
+                                label(for="f-color-4").f-color-checkbox__label
+                                    span(style="background: #6E6872;").f-color-checkbox__figure
+                                    |80х200
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-5.f-color-checkbox__input
+                                label(for="f-color-5").f-color-checkbox__label
+                                    span(style="background: #FEA93E;").f-color-checkbox__figure
+                                    |80х200
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-6.f-color-checkbox__input
+                                label(for="f-color-6").f-color-checkbox__label
+                                    span(style="background: #9A846D;").f-color-checkbox__figure
+                                    |80х200
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-7.f-color-checkbox__input
+                                label(for="f-color-7").f-color-checkbox__label
+                                    span(style="background: yellow;").f-color-checkbox__figure
+                                    |80х200
+                            .f-color-checkbox 
+                                input(type="checkbox")#f-color-8.f-color-checkbox__input
+                                label(for="f-color-8").f-color-checkbox__label
+                                    span(style="background: red;").f-color-checkbox__figure
+                                    |80х200
+                .checkbox
+                    input(type="checkbox")#3d.checkbox__input
+                    label(for="3d").checkbox__label
+                        svg.icon.icon--check
+                            use(href="img/sprite.svg#check")
+                        b Наличие 3D модели
+                .checkbox
+                    input(type="checkbox")#folding.checkbox__input
+                    label(for="folding").checkbox__label
+                        svg.icon.icon--check
+                            use(href="img/sprite.svg#check")
+                        b Раскладной
+                .filter__bottom 
+                    a(href="#").btn.btn-primary Показать: 290 
+                    a(href="#").btn.btn-clear Сбросить
+        .catalog-body
+            .breadcrumbs 
+                ul.breadcrumbs-list 
+                    li.breadcrumbs-list__item 
+                        a(href="").breadcrumbs-list__link Главная
+                    li.breadcrumbs-list__item Диваны
+                a(href="#").breadcrumbs__btn-mobile 
+                    svg.icon.icon--angle-left
+                        use(href="img/sprite.svg#angle-left")
+                    |Диваны
+            a(href="#").banner
+                img(src="img/banner.jpg", alt="")
+            .catalog-head
+                h1.page-title Диваны
+                .catalog-count Товаров: 
+                    b 165
+            .catalog-nav 
+                a(href="#").catalog-nav__link Прямые
+                a(href="#").catalog-nav__link Угловые
+                a(href="#").catalog-nav__link.is-active Интерьерные диваны
+                a(href="#").catalog-nav__more-mobile
+                    |Показать больше
+                    svg.icon.icon--angle-down
+                        use(href="img/sprite.svg#angle-down")
+                .catalog-nav__dropdown-mobile
+                    a(href="#").catalog-nav__link Модульные диваны
+            .catalog-filter-info
+                .active-filter
+                    .active-filter__label Фильтры:
+                    .active-filter__item 
+                        .active-filter__name Цена: 200000-490000
+                        a(href="#").active-filter__remove
+                            svg.icon.icon--cross
+                                use(href="img/sprite.svg#cross")
+                    .active-filter__item 
+                        .active-filter__name Жесткий
+                        a(href="#").active-filter__remove
+                            svg.icon.icon--cross
+                                use(href="img/sprite.svg#cross")
+                .catalog-sorting
+                    a(href="#").btn-filter-mobile
+                        svg.icon.icon--filter
+                            use(href="img/sprite.svg#filter")
+                        |Фильтр 
+                    .form-control-select 
+                        select.select
+                            option(value="1") Популярные
+                            option(value="2") Дешевые
+                            option(value="3") Дорогие
+                            option(value="4") Новые
+                            option(value="5") С отзывами
+                            option(value="6") Высокая оценка
+                    .show-products Показать товаров: 
+                        a(href="").show-products__link 24
+            .catalog-list 
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-1", checked)#size-1-1.size-checkbox__input
+                                    label(for="size-1-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-1")#size-1-2.size-checkbox__input
+                                    label(for="size-1-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-1")#size-1-3.size-checkbox__input
+                                    label(for="size-1-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-1")#size-1-4.size-checkbox__input
+                                    label(for="size-1-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-1")#color-1-1.color-checkbox__input
+                                        label(for="color-1-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-1")#color-1-2.color-checkbox__input
+                                        label(for="color-1-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-1")#color-1-3.color-checkbox__input
+                                        label(for="color-1-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-1-4.color-checkbox__input
+                                        label(for="color-1-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-1-5.color-checkbox__input
+                                        label(for="color-1-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-1-6.color-checkbox__input
+                                        label(for="color-1-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn.is-active
+                                    svg.icon.icon--heart-fill
+                                        use(href="img/sprite.svg#heart-fill")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-2", checked)#size-2-1.size-checkbox__input
+                                    label(for="size-2-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-2")#size-2-2.size-checkbox__input
+                                    label(for="size-2-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-2")#size-2-3.size-checkbox__input
+                                    label(for="size-2-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-2")#size-2-4.size-checkbox__input
+                                    label(for="size-2-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-2-1.color-checkbox__input
+                                        label(for="color-2-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-2-2.color-checkbox__input
+                                        label(for="color-2-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-2-3.color-checkbox__input
+                                        label(for="color-2-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-2-4.color-checkbox__input
+                                        label(for="color-2-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-2-5.color-checkbox__input
+                                        label(for="color-2-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-2")#color-2-6.color-checkbox__input
+                                        label(for="color-2-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-3", checked)#size-3-1.size-checkbox__input
+                                    label(for="size-3-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-3")#size-3-2.size-checkbox__input
+                                    label(for="size-3-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-3")#size-3-3.size-checkbox__input
+                                    label(for="size-3-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-3")#size-3-4.size-checkbox__input
+                                    label(for="size-3-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-3")#color-3-1.color-checkbox__input
+                                        label(for="color-3-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-3")#color-3-2.color-checkbox__input
+                                        label(for="color-3-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-3")#color-3-3.color-checkbox__input
+                                        label(for="color-3-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-3")#color-3-4.color-checkbox__input
+                                        label(for="color-3-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-3")#color-3-5.color-checkbox__input
+                                        label(for="color-3-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-3")#color-3-6.color-checkbox__input
+                                        label(for="color-3-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="szize-4", checked)#szize-4-1.size-checkbox__input
+                                    label(for="szize-4-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="szize-4")#szize-4-2.size-checkbox__input
+                                    label(for="szize-4-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="szize-4")#szize-4-3.size-checkbox__input
+                                    label(for="szize-4-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="szize-4")#szize-4-4.size-checkbox__input
+                                    label(for="szize-4-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-4")#color-4-1.color-checkbox__input
+                                        label(for="color-4-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-4")#color-4-2.color-checkbox__input
+                                        label(for="color-4-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-4")#color-4-3.color-checkbox__input
+                                        label(for="color-4-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-4")#color-4-4.color-checkbox__input
+                                        label(for="color-4-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-4")#color-4-5.color-checkbox__input
+                                        label(for="color-4-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-4")#color-4-6.color-checkbox__input
+                                        label(for="color-4-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-5", checked)#size-5-1.size-checkbox__input
+                                    label(for="size-5-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-5")#size-5-2.size-checkbox__input
+                                    label(for="size-5-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-5")#size-5-3.size-checkbox__input
+                                    label(for="size-5-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-5")#size-5-4.size-checkbox__input
+                                    label(for="size-5-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-5")#color-5-1.color-checkbox__input
+                                        label(for="color-5-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-5")#color-5-2.color-checkbox__input
+                                        label(for="color-5-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-5")#color-5-3.color-checkbox__input
+                                        label(for="color-5-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-5")#color-5-4.color-checkbox__input
+                                        label(for="color-5-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-5")#color-5-5.color-checkbox__input
+                                        label(for="color-5-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-5")#color-5-6.color-checkbox__input
+                                        label(for="color-5-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-6", checked)#size-6-1.size-checkbox__input
+                                    label(for="size-6-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-6")#size-6-2.size-checkbox__input
+                                    label(for="size-6-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-6")#size-6-3.size-checkbox__input
+                                    label(for="size-6-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-6")#size-6-4.size-checkbox__input
+                                    label(for="size-6-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-6")#color-6-1.color-checkbox__input
+                                        label(for="color-6-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-6")#color-6-2.color-checkbox__input
+                                        label(for="color-6-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-6")#color-6-3.color-checkbox__input
+                                        label(for="color-6-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-6")#color-6-4.color-checkbox__input
+                                        label(for="color-6-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-6")#color-6-5.color-checkbox__input
+                                        label(for="color-6-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-6")#color-6-6.color-checkbox__input
+                                        label(for="color-6-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-7", checked)#size-7-1.size-checkbox__input
+                                    label(for="size-7-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-7")#size-7-2.size-checkbox__input
+                                    label(for="size-7-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-7")#size-7-3.size-checkbox__input
+                                    label(for="size-7-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-7")#size-7-4.size-checkbox__input
+                                    label(for="size-7-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-7")#color-7-1.color-checkbox__input
+                                        label(for="color-7-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-7")#color-7-2.color-checkbox__input
+                                        label(for="color-7-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-7")#color-7-3.color-checkbox__input
+                                        label(for="color-7-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-7")#color-7-4.color-checkbox__input
+                                        label(for="color-7-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-7")#color-7-5.color-checkbox__input
+                                        label(for="color-7-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-7")#color-7-6.color-checkbox__input
+                                        label(for="color-7-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-9", checked)#size-9-1.size-checkbox__input
+                                    label(for="size-9-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-9")#size-9-2.size-checkbox__input
+                                    label(for="size-9-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-9")#size-9-3.size-checkbox__input
+                                    label(for="size-9-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-9")#size-9-4.size-checkbox__input
+                                    label(for="size-9-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-9")#color-9-1.color-checkbox__input
+                                        label(for="color-9-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-9")#color-9-2.color-checkbox__input
+                                        label(for="color-9-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-9")#color-9-3.color-checkbox__input
+                                        label(for="color-9-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-9")#color-9-4.color-checkbox__input
+                                        label(for="color-9-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-9")#color-9-5.color-checkbox__input
+                                        label(for="color-9-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-9")#color-9-6.color-checkbox__input
+                                        label(for="color-9-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+                .catalog-list__item
+                    .card
+                        .card__hover 
+                            .card__head 
+                                .rating 
+                                    ul.rating-stars
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            .rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                        li.rating-stars__item
+                                            svg.icon.icon--star
+                                                use(href="img/sprite.svg#star")
+                                            div(style="width: 50%").rating-stars__item-active
+                                                svg.icon.icon--star
+                                                    use(href="img/sprite.svg#star")
+                                    .rating__number 4,9
+                                a(href="#").product-whish-btn
+                                    svg.icon.icon--heart
+                                        use(href="img/sprite.svg#heart")
+                            .card-slider-hover
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        a(href="#").splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__product-info 
+                                .card__category Диван
+                                .card__code Код товара: 13244
+                            a(href="#").card__name Прямой диван Lily
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        a(href="#").installments__link 1200 Т
+                            .card__size
+                                .card__row-label Размер:
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-8", checked)#size-8-1.size-checkbox__input
+                                    label(for="size-8-1").size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-8")#size-8-2.size-checkbox__input
+                                    label(for="size-8-2").size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-8")#size-8-3.size-checkbox__input
+                                    label(for="size-8-3").size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="radio", name="size-8")#size-8-4.size-checkbox__input
+                                    label(for="size-8-4").size-checkbox__label 120х280
+                                a(href="#").card__row-more +5
+                            .card__row 
+                                .card__row-label Цвет:
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-8")#color-8-1.color-checkbox__input
+                                        label(for="color-8-1", style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-8")#color-8-2.color-checkbox__input
+                                        label(for="color-8-2", style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-8")#color-8-3.color-checkbox__input
+                                        label(for="color-8-3", style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-8")#color-8-4.color-checkbox__input
+                                        label(for="color-8-4", style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-8")#color-8-5.color-checkbox__input
+                                        label(for="color-8-5", style="background: #FEA93E;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="radio", name="color-8")#color-8-6.color-checkbox__input
+                                        label(for="color-8-6", style="background: #FEA93E;").color-checkbox__label
+                                a(href="#").card__row-more +3
+                            .card__row 
+                                .card__row-label Ткань:
+                                a(href="material").material-btn.modal-btn Выберите ткань
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней 
+                            .card__row 
+                                a(href="#").btn-card.btn-border.btn-border--blue Купить в 1 клик
+                                a(href="#").btn-card.btn.btn-primary В корзину
+                        .card__inner 
+                            .card-slider
+                                .product-slider__badge.product-slider__badge-right.product-slider__badge-bottom
+                                    .badge.badge--rose -60%
+                                    .badge.badge--yellow NEW
+                                .product-slider__badge.product-slider__badge-left.product-slider__badge-top
+                                    .badge.badge--rose Черная пятница
+                                    .badge.badge--yellow Только на сайте
+                                .splide__track
+                                    .splide__list
+                                        .splide__slide
+                                            img(src="img/product-slider-1.jpg", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-2.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-3.webp", alt="")
+                                        .splide__slide
+                                            img(src="img/product-slider-4.webp", alt="")
+                            .card__name Прямой диван Lily
+                            .card__row 
+                                .card__color
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #9A846D;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #CCC5BF;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6C695A;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #6E6872;").color-checkbox__label
+                                    .color-checkbox.color-checkbox-sm
+                                        input(type="checkbox").color-checkbox__input
+                                        label(style="background: #FEA93E;").color-checkbox__label
+                                .card__link-more Показать больше
+                            .price-row 
+                                .price.price-sm 
+                                    .price__number 
+                                        span.price__label от
+                                        |186 202 
+                                        span.price__number-currency &#8376;
+                                    .price__old 465 504 &#8376;
+                                .price-row__right
+                                    .installments.installments-sm
+                                        |Рассрочка от 
+                                        .installments__link 1200 Т
+                            .card__size
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 140х220
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х200
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 100х240
+                                .size-checkbox.size-checkbox-sm
+                                    input(type="checkbox").size-checkbox__input
+                                    label.size-checkbox__label 120х280
+                                .card__row-more +5
+                            .card__row
+                                .card__availability
+                                    .availability-ico.availability-ico--yellow
+                                    |В наличии: 12
+                                .card__availability
+                                    .availability-ico.availability-ico--blue
+                                    |Под заказ: 10 дней
+            a(href="#").btn-more Показать еще
+            .pagination 
+                ul.pagination-list
+                    li.pagination-list__item.is-active 1
+                    li.pagination-list__item
+                        a(href="#").pagination-list__link 2
+                    li.pagination-list__item
+                        a(href="#").pagination-list__link 3
+                    li.pagination-list__item
+                        a(href="#").pagination-list__next След.
+                            svg.icon.icon--angle-right
+                                use(href="img/sprite.svg#angle-right")
+                .pagination__count Вы посмотрели 24 из 98 товаров
+            .catalog-text   
+                p Что нужно человеку для доброго и прекрасного утра - это удобная постель и здоровый сон. Интернет-магазин Askona обладает широким ассортиментом на ортопедические матрасы для спокойной ночи.
+                p В нашем каталоге предложены следующие группы товаров:
+                ul 
+                    li анатомические пружинные матрасы - подходят для здоровых людей и с проблемами позвоночника. Специальные наполнители обладают эффектом памяти, обеспечивают поддержку тела и снимают напряжение мышц. Каждая пружина упакована в отдельную нишу, что позволяет равномерно распределить нагрузку по всему телу;
+                    li комбинированные матрасы - отличаются повышенной гибкостью и эластичностью. Они способны максимально расслабить тело, обеспечить надежную его поддержку, способствуют регуляции влаги, температуры. Натуральные волокна не накапливают запахи и способствуют идеальному микроклимату в спальне;
+                    li беспружинные модели - с искусственными и натуральными наполнителями. Матрасы не проминаются под весом тела, быстро восстанавливают первоначальную форму даже после долгого срока службы. За счет сочетания разных материалов предотвращают передачу движения партнера и способствуют равномерному распределению нагрузки.
+                p Все матрасы удобные, гипоаллергенные, рассчитаны на различный вес и рост. Они не накапливают влагу, воздухопроницаемые, подлежат легкой очистке.
+                h4.title-sm Где купить матрас?
+                p Интернет-магазин Askona - это доступные цены, широкий, регулярно обновляемый ассортимент на комфортную мебель в Казахстане. Наша компания предлагает Вам не только ортопедические матрасы, но и другие виды матрасов собственного производства. Мы осуществляем быструю доставку матрасов по всей стране. Покупатель может также забрать заказ из пункта самовывоза в Алматы или сделать заказ через сторонние курьерские службы.
+
+.mobile-navbar 
+    .mobile-navbar__body
+        ul.mobile-list 
+            li.mobile-list__item
+                a(href="#").mobile-list__link
+                    span.mobile-list__icon
+                        svg.icon.icon--filter-sm
+                            use(href="img/sprite.svg#filter-sm")
+                    |Фильтр
+            li.mobile-list__item
+                a(href="#").mobile-list__link
+                    span.mobile-list__icon
+                        svg.icon.icon--lope
+                            use(href="img/sprite.svg#lope")
+                    |Поиск
+            li.mobile-list__item
+                a(href="#").mobile-list__link
+                    span.mobile-list__icon
+                        svg.icon.icon--cabinet
+                            use(href="img/sprite.svg#cabinet")
+                    |Кабинет
+            li.mobile-list__item
+                a(href="#", data-tab="navbar-tab-1").mobile-list__link.mobile-navbar__btn
+                    span.mobile-list__icon
+                        svg.icon.icon--chat
+                            use(href="img/sprite.svg#chat")
+                        svg.icon.icon--chat-fill
+                            use(href="img/sprite.svg#chat-fill")
+                        span.online-badge Online
+                    |Чат
+            li.mobile-list__item
+                a(href="#", data-tab="navbar-tab-2").mobile-list__link.mobile-navbar__btn
+                    span.mobile-list__icon
+                        svg.icon.icon--phone
+                            use(href="img/sprite.svg#phone")
+                        svg.icon.icon--phone-fill
+                            use(href="img/sprite.svg#phone-fill")
+                        span.online-badge Online
+                    |Звонок
+    div(data-tab-content="navbar-tab-1").mobile-navbar__item 
+        ul.social-navbar
+            li.social-navbar__item 
+                a(href="#").social-navbar__link.social-navbar__link-vk
+                    svg.icon.icon--vk
+                        use(href="img/sprite.svg#vk")
+            li.social-navbar__item 
+                a(href="#").social-navbar__link.social-navbar__link-telegram
+                    svg.icon.icon--telegram
+                        use(href="img/sprite.svg#telegram")
+            li.social-navbar__item 
+                a(href="#").social-navbar__link.social-navbar__link-facebook
+                    svg.icon.icon--facebook
+                        use(href="img/sprite.svg#facebook")
+            li.social-navbar__item 
+                a(href="#").social-navbar__link.social-navbar__link-odnoklasniki
+                    svg.icon.icon--odnoklasniki
+                        use(href="img/sprite.svg#odnoklasniki")
+            li.social-navbar__item 
+                a(href="#").social-navbar__link.social-navbar__link-whatsapp
+                    svg.icon.icon--whatsapp
+                        use(href="img/sprite.svg#whatsapp")
+            li.social-navbar__item 
+                a(href="#").social-navbar__link.social-navbar__link-viber
+                    svg.icon.icon--viber
+                        use(href="img/sprite.svg#viber")
+    div(data-tab-content="navbar-tab-2").mobile-navbar__item 
+        ul.phone-nav 
+            li.phone-nav__item.is-active 
+                a(href="#", data-tab="phone-tab-1").phone-nav__link.is-active
+                    svg.icon.icon--phone
+                        use(href="img/sprite.svg#phone")
+                    svg.icon.icon--phone-fill.icon-active
+                        use(href="img/sprite.svg#phone-fill")
+            li.phone-nav__item 
+                a(href="#", data-tab="phone-tab-2").phone-nav__link
+                    svg.icon.icon--chat
+                        use(href="img/sprite.svg#chat")
+                    svg.icon.icon--chat-fill.icon-active
+                        use(href="img/sprite.svg#chat-fill")
+            li.phone-nav__item 
+                a(href="#", data-tab="phone-tab-3").phone-nav__link
+                    svg.icon.icon--video
+                        use(href="img/sprite.svg#video")
+                    svg.icon.icon--video-fill.icon-active
+                        use(href="img/sprite.svg#video-fill")
+        div(data-tab-content="phone-tab-1").phone-tab.is-active 
+            h4.phone-title Заказать обратный звонок
+            .form-control 
+                input(type="text", placeholder="Имя").form-control__input
+            .form-control 
+                input(type="text", placeholder="+ 375 (___) ___ -__-__").form-control__input
+            a(href="#").btn.btn-primary.btn-full Свяжитесь со мной 
+            .terms 
+                p Отправляя заявку, я соглашаюсь с условиями <br>
+                    a(href="#").link-blue Политика конфиденциальности
+            .call-naw
+                |Вы можете сэкономить время, позвонив нам прямо сейчас:
+                a(href="tel:+375000000000").call-naw__link +375 (00) 000-00-00
+        div(data-tab-content="phone-tab-2").phone-tab
+            h4.phone-title Задать вопрос
+            .form-control 
+                input(type="text", placeholder="Имя").form-control__input
+            .form-control 
+                input(type="text", placeholder="E-mail").form-control__input
+            .form-control
+                textarea(, cols="30", rows="10", placeholder="Ваше сообщение").form-control__textarea
+            a(href="#").btn.btn-primary.btn-full Отправить собщение
+            .terms 
+                p Отправляя заявку, я соглашаюсь с условиями <br>
+                    a(href="#").link-blue Политика конфиденциальности
+        div(data-tab-content="phone-tab-3").phone-tab
+            h4.phone-title Видео конференция со специалистом
+            .phone-sub-title Персональные видеоконсультации со специалистом магазина, позволят выбрать мебель не выходя из дома.
+            .form-control 
+                input(type="text", placeholder="Имя").form-control__input
+            .form-control 
+                input(type="text", placeholder="+ 375 (___) ___ -__-__").form-control__input
+            .form-control-select
+                select(palceholder="Способ связи").select
+                    option(value="") Способ связи
+                    option(value="1") Способ связи 1
+                    option(value="2") Способ связи 2
+                    option(value="3") Способ связи 3
+            a(href="#").btn.btn-primary.btn-full Отправить заявку
+            .terms 
+                p Отправляя заявку, я соглашаюсь с условиями <br>
+                    a(href="#").link-blue Политика конфиденциальности
+#material.modal-sidebar
+    a(href="#").modal-sidebar__close 
+        svg.icon.icon--cross
+            use(href="img/sprite.svg#cross")
+    .product-previwe 
+        a(href="#").modal-sidebar__close 
+            svg.icon.icon--cross
+                use(href="img/sprite.svg#cross")
+        .product-previwe__img
+            img(src="img/product-slider-1.jpg", alt="")
+        h2.product-name Прямой диван Lily
+        .price 
+            .price__number 
+                span.price__label от
+                |186 202 
+                span.price__number-currency &#8376;
+        a(href="#").btn.btn-product.btn-primary В корзину
+    .modal-sidebar__inner
+        a(href="#").modal-sidebar__close 
+            svg.icon.icon--cross
+                use(href="img/sprite.svg#cross")
+        .modal-sidebar__head 
+            h2.product-name Прямой диван Lily
+            .modal-sidebar__head-right
+                .price 
+                    .price__number 
+                        span.price__label от
+                        |186 202 
+                        span.price__number-currency &#8376;
+                a(href="#").btn.btn-product.btn-primary В корзину
+        .modal-sidebar__img-container 
+            .modal-sidebar__img
+                img(src="img/product-slider-1.jpg", alt="")
+            .product-slider__buttons 
+                a(href="zoom").product-slider__btn.modal-btn-zoom
+                    svg.icon.icon--zoom-plus
+                        use(href="img/sprite.svg#zoom-plus")
+                a(href="#").product-slider__btn.product-slider__btn--blue 360&ordm;
+        .modal-sidebar__filter
+            h4.title-sm Материал
+            .modal-sidebar__filter-row
+                .modal-sidebar__filter-item
+                    .modal-select
+                        .modal-select__label Размер: 
+                        select.select
+                            option(value="1") 120x200
+                            option(value="2") 130x200
+                            option(value="3") 140x200
+                            option(value="4") 150x200
+                .modal-sidebar__filter-item
+                    .modal-select
+                        .modal-select__label Цвет:  
+                        select.select-w-icon
+                            option(value="1", data-color="background: #745C5C;") Коричневый
+                            option(value="2", data-color="background: #000;") Dorio Grafit
+                            option(value="3", data-color="background: #C8BBA1;") Dorio Grafit
+                .modal-sidebar__filter-item
+                    .modal-select
+                        .modal-select__label Свойства:  
+                        select.select
+                            option(value="1") Pet Friendly
+                            option(value="2") Friendly Pet 
+                            option(value="3") Pet Not Friendly
+        .modal-sidebar__row 
+            .modal-sidebar__row-head
+                a(href="#").link-modal-more Название ткани (Велюр)
+                |Цена от 189 500 Т
+            .modal-sidebar__dropdown 
+                ul.product-offer 
+                    li.product-offer__item 
+                            svg.icon.icon--car
+                                use(href="img/sprite.svg#car")
+                            |Доставим сегодня при заказе до 15:00
+                    li.product-offer__item 
+                            svg.icon.icon--timer
+                                use(href="img/sprite.svg#timer")
+                            |Быстрый вопрос
+                    li.product-offer__item 
+                            svg.icon.icon--garage
+                                use(href="img/sprite.svg#garage")
+                            |Самовывоз: 
+                            a(href="#").product-offer__link 1 пункт
+                p Мягкий и удобный прямой диван – уютный уголок для комфортного отдыха всей семьи. Оснащенная простым и надежным механизмом трансформации, эта модель легко раскладывается в просторное и ровное место для сна. Материал обивки – практичный и приятный на ощупь, он надолго сохраняет свой прежний вид, не истирается и 
+            .radio-list
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-2")#material-2-1.material-checkbox__input
+                        label(for="material-2-1").material-checkbox__label
+                            span.material-color.material--outer-space
+                            span.material-name Dorio Grafit
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-2")#material-2-2.material-checkbox__input
+                        label(for="material-2-2").material-checkbox__label
+                            span.material-color.material--coral-reef
+                            span.material-name Dorio Grafit
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-2")#material-2-3.material-checkbox__input
+                        label(for="material-2-3").material-checkbox__label
+                            span.material-color.material--bazaar
+                            span.material-name Dorio Grafit
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-2")#material-2-4.material-checkbox__input
+                        label(for="material-2-4").material-checkbox__label
+                            span.material-color.material--granite-green
+                            span.material-name Dorio Grafit
+        .modal-sidebar__row 
+            .modal-sidebar__row-head
+                a(href="#").link-modal-more Название ткани (Велюр)
+                |Цена от 189 500 Т
+            .modal-sidebar__dropdown 
+                ul.product-offer 
+                    li.product-offer__item 
+                            svg.icon.icon--car
+                                use(href="img/sprite.svg#car")
+                            |Доставим сегодня при заказе до 15:00
+                    li.product-offer__item 
+                            svg.icon.icon--timer
+                                use(href="img/sprite.svg#timer")
+                            |Быстрый вопрос
+                    li.product-offer__item 
+                            svg.icon.icon--garage
+                                use(href="img/sprite.svg#garage")
+                            |Самовывоз: 
+                            a(href="#").product-offer__link 1 пункт
+                p Мягкий и удобный прямой диван – уютный уголок для комфортного отдыха всей семьи. Оснащенная простым и надежным механизмом трансформации, эта модель легко раскладывается в просторное и ровное место для сна. Материал обивки – практичный и приятный на ощупь, он надолго сохраняет свой прежний вид, не истирается и 
+            .radio-list
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-3")#material-3-1.material-checkbox__input
+                        label(for="material-3-1").material-checkbox__label
+                            span.material-color.material--outer-space
+                            span.material-name Dorio Grafit
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-3")#material-3-2.material-checkbox__input
+                        label(for="material-3-2").material-checkbox__label
+                            span.material-color.material--coral-reef
+                            span.material-name Dorio Grafit
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-3")#material-3-3.material-checkbox__input
+                        label(for="material-3-3").material-checkbox__label
+                            span.material-color.material--bazaar
+                            span.material-name Dorio Grafit
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-3")#material-3-4.material-checkbox__input
+                        label(for="material-3-4").material-checkbox__label
+                            span.material-color.material--granite-green
+                            span.material-name Dorio Grafit
+        .modal-sidebar__row 
+            .modal-sidebar__row-head
+                a(href="#").link-modal-more Название ткани (Велюр)
+                |Цена от 189 500 Т
+            .modal-sidebar__dropdown 
+                ul.product-offer 
+                    li.product-offer__item 
+                            svg.icon.icon--car
+                                use(href="img/sprite.svg#car")
+                            |Доставим сегодня при заказе до 15:00
+                    li.product-offer__item 
+                            svg.icon.icon--timer
+                                use(href="img/sprite.svg#timer")
+                            |Быстрый вопрос
+                    li.product-offer__item 
+                            svg.icon.icon--garage
+                                use(href="img/sprite.svg#garage")
+                            |Самовывоз: 
+                            a(href="#").product-offer__link 1 пункт
+                p Мягкий и удобный прямой диван – уютный уголок для комфортного отдыха всей семьи. Оснащенная простым и надежным механизмом трансформации, эта модель легко раскладывается в просторное и ровное место для сна. Материал обивки – практичный и приятный на ощупь, он надолго сохраняет свой прежний вид, не истирается и 
+            .radio-list
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-4")#material-4-1.material-checkbox__input
+                        label(for="material-4-1").material-checkbox__label
+                            span.material-color.material--coral-reef
+                            span.material-name Dorio Grafit
+                .radio-list__item
+                    .material-checkbox
+                        input(type="radio", name="material-4")#material-4-2.material-checkbox__input
+                        label(for="material-4-2").material-checkbox__label
+                            span.material-color.material--granite-green
+                            span.material-name Dorio Grafit
+#zoom.modal-zoom
+    a(href="#").zoom-close 
+        svg.icon.icon--cross
+            use(href="img/sprite.svg#cross")
+    .main-container
+        .zoom-slider-container
+            .zoom-slider
+                .splide__arrows
+                    button.splide__arrow.splide__arrow--prev
+                        svg.icon.icon--angle-left
+                            use(href="img/sprite.svg#angle-left")
+                    button.splide__arrow.splide__arrow--next
+                        svg.icon.icon--angle-right
+                            use(href="img/sprite.svg#angle-left")
+                .splide__track
+                    .splide__list
+                        .splide__slide
+                            .zoom-slider__inner 
+                                img(src="img/product-slider-1.jpg", alt="").zoom-slider__img
+                        .splide__slide
+                            .zoom-slider__inner 
+                                img(src="img/product-slider-2.webp", alt="").zoom-slider__img
+                        .splide__slide
+                            .zoom-slider__inner 
+                                img(src="img/product-slider-3.webp", alt="").zoom-slider__img
+                        .splide__slide
+                            .zoom-slider__inner 
+                                img(src="img/product-slider-4.webp", alt="").zoom-slider__img
+                        .splide__slide
+                            .zoom-slider__inner 
+                                img(src="img/product-slider-1.jpg", alt="").zoom-slider__img
+                        .splide__slide
+                            .zoom-slider__inner 
+                                img(src="img/product-slider-1.jpg", alt="").zoom-slider__img
+                        .splide__slide
+                            .zoom-slider__inner 
+                                img(src="img/product-slider-1.jpg", alt="").zoom-slider__img
+            .zoom-thumbs-slider
+                .splide__track
+                    .splide__list
+                        .splide__slide
+                            img(src="img/product-slider-1.jpg", alt="").zoom-thumbs-slider__img
+                        .splide__slide
+                            img(src="img/product-slider-2.webp", alt="").zoom-thumbs-slider__img
+                        .splide__slide
+                            img(src="img/product-slider-3.webp", alt="").zoom-thumbs-slider__img
+                        .splide__slide
+                            img(src="img/product-slider-4.webp", alt="").zoom-thumbs-slider__img
+                        .splide__slide
+                            img(src="img/product-slider-1.jpg", alt="").zoom-thumbs-slider__img
+                        .splide__slide
+                            img(src="img/product-slider-1.jpg", alt="").zoom-thumbs-slider__img
+                        .splide__slide
+                            img(src="img/product-slider-1.jpg", alt="").zoom-thumbs-slider__img
+
+div(style="padding-top: 300px;")
+
+
+
