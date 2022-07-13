@@ -533,3 +533,120 @@ if(document.querySelector('.selaction-table')) {
     });
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//achievement-slider
+if(document.querySelectorAll(".achievement-slider").length) {
+    var achievementSliders = document.querySelectorAll('.achievement-slider');
+
+    for (const achievementSlider of achievementSliders) {
+        var achievementSliderFunc = new Splide(achievementSlider, {
+            perPage: 3,
+            pagination: false,
+            perMove: 1,
+            arrows: false,
+            autoplay: true,
+            gap: 15,
+            rewind: true,
+            speed: 200,
+            easing: 'linear',
+            type: 'slide',
+            padding: { left: 0, right: 0 },
+            focus: 1,
+            breakpoints: {
+                1300: {
+                    perPage: 1,
+                    gap: 50,
+                    padding: { left: 200, right: 200 },
+                    focus: 'center',
+                    type   : 'loop',
+                },
+                920: {
+                    perPage: 1,
+                    gap: 40,
+                    padding: { left: '20%', right: '20%' },
+                    focus: 'center',
+                    type   : 'loop',
+                },
+                730: {
+                    perPage: 1,
+                    gap: 20,
+                    padding: { left: '15%', right: '15%' },
+                    focus: 'center',
+                    type   : 'loop',
+                },
+                530: {
+                    perPage: 1,
+                    gap: 10,
+                    padding: { left: '5%', right: '5%' },
+                    focus: 'center',
+                    type   : 'loop',
+                },
+                450: {
+                    perPage: 1,
+                    gap: 5,
+                    padding: { left: 0, right: 0 },
+                    focus: 'center',
+                    type   : 'loop',
+                }
+            }
+        } );
+        
+        achievementSliderFunc.mount();
+    }
+}
+
+//digitcounter
+window.addEventListener('load', windowLoad);
+
+function windowLoad() {
+    
+    function digitsCountersInit(digitsCountersItems) {
+        let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll("[data-digits-counter]");
+        if (digitsCounters) {
+            digitsCounters.forEach(digitsCounter => {
+                digitsCountersAnimate(digitsCounter);
+            });
+        }
+    }
+
+    function digitsCountersAnimate(digitsCounter) {
+        let startTimestamp = null;
+        const duration = parseInt(digitsCounter.dataset.digitsCounter) ? parseInt(digitsCounter.dataset.digitsCounter) : 700;
+        const startValue = parseInt(digitsCounter.innerHTML);
+        const startPosition = 0;
+        const step = (timestamp) => {
+            if(!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            digitsCounter.innerHTML = Math.floor(progress * (startPosition + startValue));
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+
+    let options = {
+        threshold: 0.6
+    }
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                const targetElement = entry.target;
+                const digitsCountersItems = targetElement.querySelectorAll('[data-digits-counter]');
+                if (digitsCountersItems.length) {
+                    digitsCountersInit(digitsCountersItems);
+                }
+                observer.unobserve(targetElement);
+            }
+        });
+    }, options);
+
+    let sections = document.querySelectorAll('.achievement__number');
+    if (sections.length) {
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    }
+}
